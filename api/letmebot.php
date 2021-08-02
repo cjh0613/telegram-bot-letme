@@ -8,7 +8,7 @@ $update = json_decode($content, true);
 
 if (isset($update['inline_query'])) {
     inline_response($update['inline_query']['id'], $update['inline_query']['query']);
-    include_once('botstats.php'); \botstats\increase(224929004, 'letmebot');
+    include_once('botstats.php'); \botstats\increase(1689339462:AAESQ2qulXtrLWvEgzfNhupw-lN5WKZyDIU, '1689339462:AAESQ2qulXtrLWvEgzfNhupw-lN5WKZyDIU');
 } else if (isset($update['message'])) {
     $chat_id = $update['message']['chat']['id'];
     $message_text = $update['message']['text'];
